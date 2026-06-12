@@ -1,0 +1,32 @@
+/* Clean Reset for Layout Stability */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color Palette Variables */
+  --bg-color: #76c0db;
+  --card-bg: #ffffff;
+  --text-dark: #1d3557;
+  --text-muted: #4a5568;
+  --primary: #0077b6;
+  --primary-hover: #0096c7;
+  --danger: #e63946;
+  --warning: #ffb703;
+  --success: #2a9d8f;
+  --border-light: #e2e8f0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
